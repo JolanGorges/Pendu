@@ -3,34 +3,33 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
-<?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.*?>
 <?import javafx.scene.text.Font?>
-
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0" prefWidth="398.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pendu.pendu.controllers.MenuController">
-   <children>
-      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
-         <children>
-            <Label text="Pseudo :">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Label>
-            <TextField fx:id="playerNameTxtField" text="Jolan">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </TextField>
-         </children>
-      </HBox>
-      <HBox alignment="CENTER" prefHeight="83.0" prefWidth="509.0" VBox.vgrow="ALWAYS">
-         <children>
-            <Button mnemonicParsing="false" onAction="#onPlayBtnAction" text="Jouer">
-               <font>
-                  <Font size="18.0" />
-               </font>
-            </Button>
-         </children>
-      </HBox>
-   </children>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="219.0"
+      prefWidth="398.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.pendu.pendu.controllers.MenuController">
+    <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="ALWAYS">
+        <Label text="Pseudo :">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Label>
+        <TextField fx:id="playerNameTxtField" prefHeight="40.0" prefWidth="188.0" text="Jolan">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </TextField>
+        <Button mnemonicParsing="false" onAction="#onPlayBtnAction" text="Jouer">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+    </HBox>
+    <HBox alignment="CENTER" prefHeight="83.0" prefWidth="509.0" VBox.vgrow="ALWAYS">
+        <Button mnemonicParsing="false" onAction="#onShowScoreBtnAction" text="Voir les scores">
+            <font>
+                <Font size="18.0"/>
+            </font>
+        </Button>
+    </HBox>
 </VBox>

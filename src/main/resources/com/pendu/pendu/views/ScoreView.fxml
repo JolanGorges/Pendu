@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="581.0" xmlns="http://javafx.com/javafx/19"
+      xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.pendu.pendu.controllers.ScoreController">
+    <TableView fx:id="scoreTbl" layoutX="100.0" layoutY="32.0" prefHeight="200.0" prefWidth="450.0" VBox.vgrow="ALWAYS">
+        <columns>
+            <TableColumn fx:id="playerNameColumn" prefWidth="140.0" text="Pseudo"/>
+            <TableColumn fx:id="scoreColumn" prefWidth="100.0" text="Score"/>
+            <TableColumn fx:id="durationColumn" prefWidth="140.0" text="Durée"/>
+            <TableColumn fx:id="moveCountColumn" prefWidth="100.0" text="Nb. de coups"/>
+            <TableColumn fx:id="errorCountColumn" prefWidth="100.0" text="Nb. d'erreurs"/>
+        </columns>
+    </TableView>
+    <Button mnemonicParsing="false" onAction="#onBackToMenuBtnAction" text="Retour au menu">
+        <VBox.margin>
+            <Insets bottom="5.0" top="5.0"/>
+        </VBox.margin>
+    </Button>
+</VBox>
